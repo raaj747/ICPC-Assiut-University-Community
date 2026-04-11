@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int a,b;
+    cin>>a>>b;
+    char s;
+    cin>>s;
+
+    bool k=false;
+
+    if(s=='<' && a<b)
+    {
+        k=true;
+    }
+    else if(s=='>' && a>b)
+    {
+        k=true;
+    }
+    else if(s=='=' && a==b)
+    {
+        k=true;
+    }
+
+
+    if(k)
+    {
+        cout<<"Right"<<nl;
+    }
+    else
+    {
+        cout<<"Wrong"<<nl;
+    }
+
+
+
+
+}

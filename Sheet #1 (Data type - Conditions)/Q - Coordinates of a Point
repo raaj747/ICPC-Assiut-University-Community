@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    double x,y;
+    cin>>x>>y;
+
+    if(x==0 && y==0)
+    {
+        cout<<"Origem"<<nl;
+    }
+    else if(x==0)
+    {
+        cout<<"Eixo Y"<<nl;
+    }
+    else if(y==0)
+    {
+        cout<<"Eixo X"<<nl;
+    }
+    else if(x>0 && y>0)
+    {
+        cout<<"Q1"<<nl;
+    }
+    else if(x<0 && y>0)
+    {
+        cout<<"Q2"<<nl;
+    }
+    else if(x<0 && y<0)
+    {
+        cout<<"Q3"<<nl;
+    }
+    else if(x>0 && y<0)
+    {
+        cout<<"Q4"<<nl;
+    }
+
+
+
+
+}

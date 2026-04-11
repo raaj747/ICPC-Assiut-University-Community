@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    double a,b;
+    cin>>a>>b;
+
+    double div=a/b;
+
+    cout<<"floor "<<(int)a<<" / "<<(int)b<<" = "<<(int)floor(div)<<nl;
+    cout<<"ceil "<<(int)a<<" / "<<(int)b<<" = "<<(int)ceil(div)<<nl;
+    cout<<"round "<<(int)a<<" / "<<(int)b<<" = "<<(int)round(div)<<nl;
+
+
+
+
+}

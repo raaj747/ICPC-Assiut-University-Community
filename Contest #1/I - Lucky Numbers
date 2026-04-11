@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int n;
+    cin>>n;
+
+    int ten=n/10;
+    int one=n%10;
+
+    if((one!=0 && ten%one==0) || (ten!=0 && one%ten==0))
+    {
+        cout<<"YES"<<nl;
+    }
+    else
+    {
+        cout<<"NO"<<nl;
+    }
+
+
+
+
+}

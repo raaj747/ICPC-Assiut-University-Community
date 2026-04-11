@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    ll n,m,k;
+    cin>>n>>m>>k;
+
+    ll left=0;
+    ll right=n+m+k;
+    ll ans=0;
+
+    while(left<=right)
+    {
+        ll mid=(left+right)/2;
+
+        ll eye=n-mid;
+        ll body=k-mid;
+        ll mouth=m;
+
+        if(eye>=0 && body>=0 && eye+mouth>=mid)
+        {
+            ans=mid;
+            left=mid+1;
+        }
+        else
+        {
+            right=mid-1;
+        }
+    }
+
+    cout<<ans<<nl;
+
+
+
+
+}

@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    double x,p;
+    cin>>x>>p;
+
+    double price=p*100/(100-x);
+
+    cout<<fixed<<setprecision(2)<<price;
+
+
+
+
+}

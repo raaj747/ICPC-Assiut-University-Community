@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int a,b,c;
+    cin>>a>>b>>c;
+
+    int x=a,y=b,z=c;
+
+
+    if(x>y)
+      swap(x,y);
+    if(x>z)
+      swap(x,z);
+    if(y>z)
+      swap(y,z);
+
+
+    cout<<x<<nl;
+    cout<<y<<nl;
+    cout<<z<<nl;
+
+    cout<<nl;
+
+    cout<<a<<nl;
+    cout<<b<<nl;
+    cout<<c<<nl;
+
+
+
+
+}

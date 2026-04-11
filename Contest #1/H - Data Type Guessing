@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    ll n,k,a;
+    cin>>n>>k>>a;
+ 
+    ll mul=n*k;
+ 
+    if(mul%a!=0)
+    {
+        cout<<"double"<<nl;
+    }
+    else
+    {
+        ll res=mul/a;
+ 
+        if(res<=INT_MAX)
+        {
+            cout<<"int"<<nl;
+        }
+        else
+        {
+            cout<<"long long"<<nl;
+        }
+    }
+
+
+
+
+}

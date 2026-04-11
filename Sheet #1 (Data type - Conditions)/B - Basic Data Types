@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+    int i;
+    long long ll;
+    char ch;
+    float f;
+    double d;
+
+    cin>>i>>ll>>ch>>f>>d;
+
+    cout<<i<<nl;
+    cout<<ll<<nl;
+    cout<<ch<<nl;
+    cout<<f<<nl;
+    cout<<d<<nl;
+
+
+
+
+}

@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    char x;
+    cin>>x;
+
+    if(isdigit(x))
+    {
+        cout<<"IS DIGIT"<<nl;
+    }
+    else
+    {
+        cout<<"ALPHA"<<nl;
+
+        if(isupper(x))
+        {
+            cout<<"IS CAPITAL"<<nl;
+        }
+        else if(islower(x))
+        {
+            cout<<"IS SMALL"<<nl;
+        }
+    }
+
+
+
+
+}

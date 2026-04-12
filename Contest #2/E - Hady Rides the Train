@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+    ll i;
+    cin>>i;
+
+    ll row=i/4;
+    ll pos=i%4;
+    ll col;
+
+    if(row%2==0)
+    {
+        col=pos;
+    }
+    else
+    {
+        col=3-pos;
+    }
+
+    cout<<row<<" "<<col<<nl;
+
+}

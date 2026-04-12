@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int n,a,b;
+    cin>>n>>a>>b;
+
+    int total=0;
+    for(int i=1;i<=n;i++)
+    {
+        int x=i;
+        int sum=0;
+
+        while(x>0)
+        {
+            sum+=x%10;
+            x/=10;
+        }
+
+        if(sum>=a && sum<=b)
+        {
+            total+=i;
+        }
+    }
+
+    cout<<total<<nl;
+
+
+
+}

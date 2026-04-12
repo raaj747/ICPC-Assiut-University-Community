@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        ll n;
+        cin>>n;
+
+        if(n==0)
+        {
+            cout<<0;
+        }
+        else
+        {
+            while(n>0)
+            {
+                ll ans=n%10;
+                cout<<ans<<" ";
+                n/=10;
+            }
+        }
+        cout<<nl;
+
+
+    }
+
+
+
+}

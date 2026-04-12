@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int a,b;
+    cin>>a>>b;
+
+    bool ok=false;
+    for(int i=a;i<=b;i++)
+    {
+        int x=i;
+        bool lucky=true;
+        while(x>0)
+        {
+            int d=x%10;
+            if(d!=4 && d!=7)
+            {
+                lucky=false;
+                break;
+            }
+            x/=10;
+        }
+
+        if(lucky)
+        {
+            cout<<i<<" ";
+            ok=true;
+        }
+    }
+
+    if(!ok)
+    {
+        cout<<-1<<nl;
+    }
+
+
+
+}

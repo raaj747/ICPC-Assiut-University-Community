@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+
+ll sum(ll n)
+{
+    ll total=n*(n+1)/2;
+    return total;
+}
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        ll l,r;
+        cin>>l>>r;
+
+        if(l>r)
+        {
+            swap(l,r);
+        }
+
+        ll ans=sum(r)-sum(l-1);
+
+        cout<<ans<<nl;
+    }
+}

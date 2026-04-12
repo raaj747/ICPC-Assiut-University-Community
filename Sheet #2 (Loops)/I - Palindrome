@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+
+int main()
+{
+
+    int n;
+    cin>>n;
+
+    int original= n;
+    int reversed=0;
+
+    while(n>0)
+    {
+        reversed=reversed*10+(n%10);
+        n=n/10;
+    }
+    cout<<reversed<<nl;
+
+    if(original == reversed)
+    {
+        cout<<"YES";
+    }
+    else
+    {
+        cout<<"NO";
+    }
+
+
+
+}

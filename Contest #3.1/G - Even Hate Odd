@@ -1,0 +1,55 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+const char nl='\n';
+using vi = vector<int>;
+using vll = vector<long long>;
+using si = set<int>;
+using sll = set<long long>;
+using st = stack<int>;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+
+        int n;
+        cin>>n;
+
+        int odd=0,even=0;
+        for(int i=0;i<n;i++)
+        {
+            int x;
+            cin>>x;
+
+            if(x%2==0)
+            {
+                odd++;
+            }
+            else
+            {
+                even++;
+            }
+        }
+
+        if(n%2==1)
+        {
+            cout<<-1<<nl;
+        }
+        else
+        {
+            int ans=abs(odd-even)/2;
+
+            cout<<ans<<nl;
+        }
+
+
+
+
+
+    }
+
+}
